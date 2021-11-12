@@ -1,0 +1,541 @@
+/* Resetting the margin and padding to 0 by default */
+
+
+*{
+	margin: 0;
+
+	padding: 0;
+}
+
+
+/* Defining CSS Variables */
+
+
+:root{
+	--primary-color: #3d5af1;
+
+	--secondary-color: #5d5d5a;
+
+	--background-light: #fef4a9;
+
+	--background-dark: #002651;
+	
+	--info-color: green;
+	
+	--navbar-dark: #0e153a;
+	
+	--navbar-light: #f8d0b0;
+	
+	--def-font-family: 'Poppins';
+	
+	--navlink: grey;
+	
+	--text-light:  white;
+	
+	--text-dark: black;
+
+	--visited: lightblue;
+}
+
+
+body{
+	font-family: var( --def-font-family );
+}
+
+
+.header-container{
+
+	background-color: var( --navbar-dark );
+	
+	padding: 1px;
+
+	overflow:  hidden;
+}
+
+
+.header-container h1{
+
+ 	margin: 13px 12px 14px 24px;
+
+ 	color: var( --text-light );
+
+ 	font-size: 21px;
+ 	
+ 	letter-spacing: 4px;
+
+}
+
+
+.header-container ul a{
+	
+	display: inline-block;
+	
+	color: var( --navlink );
+	
+	text-align: center;
+	
+	float: right;
+	
+	margin: -43px 34px 12px;
+	
+	padding: 5px 14px;
+
+	font-weight: bold;
+
+	text-decoration: none;
+}
+
+
+.header-container .icon{
+
+	display: none;
+}
+
+
+.header-container ul a::after{
+
+	content: " | ";
+	padding: 8px;
+	margin: 0px 34px 0px 0px;
+	opacity: 0.7;
+}
+
+
+.header-container ul a::before{
+
+	content: " | ";
+	padding: 8px;
+	margin: 0px 6px 0px 0px;
+	opacity: 0.7;
+}
+
+
+.hero-container{
+	
+	background-image: linear-gradient(to bottom, rgba(16, 153, 255, 0.9), rgba(255, 252, 179, 0.3)), url(scenery.cb6f0282.png);
+	
+	height: 300px;
+	
+	position: relative;
+}
+
+
+.hero-container h1{
+	
+	width: 100px;
+	
+	height: 100px;
+	
+	color: var( --text-black );
+	
+	position: absolute;
+	
+	top: 50%;
+	
+	left: 47%;
+	
+	transform: translate(-50%, -50%);
+	
+	white-space: nowrap;
+	
+	max-width: 70%;
+	
+	text-overflow: ellipsis;
+
+	letter-spacing: 2px;
+}
+
+
+.hero-container .button{
+	
+	position: absolute;
+
+    width: 118px;
+
+	height: 23px;
+
+	left: 658px;
+
+	top: 203px;
+
+	background: #2D6CDF;
+
+	border-radius: 6px;
+
+	text-align: center;
+
+	margin: auto;
+
+	padding: 12px;
+
+	font-weight: bold;
+}
+
+
+.section-container{
+	
+	--orange:  orange;
+	
+	text-align: center;
+	
+	padding: 30px;
+
+	color: var( --orange );
+	
+	letter-spacing: 2px;
+}
+
+
+.footer-container{
+	
+	background-color: var( --navbar-dark );
+	
+	padding: 12px;
+	
+	color: var( --text-light );
+
+	position: absolute;
+
+	
+	width: 1509px;
+	
+	height: 40px;
+	
+	left: 0px;
+	
+	top: 767px;
+	
+}
+
+
+.footer-container h3{
+	
+	padding: 8px;
+	
+	color: var( --info-color );
+}
+
+
+.footer-info{
+	
+	text-align: right;
+	
+	text-decoration-style: initial;
+	
+	text-decoration:  overline, underline;
+	
+	color: var( --info-color );
+	
+	margin: -43px 44px 34px 34px;
+}
+
+
+.rectangle{
+	
+	position: absolute;
+
+	width: 267px;
+
+	height: 183px;
+
+	left: 192px;
+
+	top: 477px;
+
+	display: flex;
+
+	background: rgba(0, 0, 0, 0.43);
+}
+
+
+.rectangle1{
+	position: absolute;
+
+	display: flex;
+
+	width: 267px;
+	
+	height: 183px;
+	
+	left: 569px;
+	
+	top: 477px;
+
+	background: url("http://static3.businessinsider.com/image/55804521ecad04c913bc01a5/20-gorgeous-natural-wonders-around-the-world.jpg");
+}
+
+
+.rectangle2{
+
+	position: absolute;
+	
+	width: 267px;
+	
+	height: 183px;
+	
+	left: 946px;
+	
+	top: 477px;
+
+	display: flex;
+
+	background: rgba(0, 0, 0, 0.43);
+}
+
+
+h4{
+
+	position: absolute;
+
+	width: 73px;
+	
+	height: 20px;
+	
+	left: 672px;
+	
+	top: 281px;
+
+	font-family: Poppins;
+	
+	font-style: normal;
+	
+	font-weight: 500;
+	
+	font-size: 13px;
+	
+	line-height: 19px;
+
+	color: #FFFFFF;
+}
+
+
+.img-container{
+
+	width: 267px;
+	
+	height: 183px;
+
+	border: 1px solid var( --text-dark );
+}
+
+
+.visited{
+
+	background-color: var( --visited );
+}
+
+
+.overlay{
+
+	background-image: linear-gradient(to bottom, rgba(16, 153, 255, 0.7), rgba(255, 252, 179, 0.7)), url("http://static3.businessinsider.com/image/55804521ecad04c913bc01a5/20-gorgeous-natural-wonders-around-the-world.jpg");
+}
+
+
+.text{
+	
+	position: absolute;
+
+	width: 136px;
+
+	height: 21px;
+
+	left: 74px;
+
+	top: 199px;
+
+	color: var( --text-dark );
+
+	letter-spacing: 2px;
+
+	font-size: 15px;
+
+	white-space: nowrap;
+
+	text-overflow: ellipsis;
+}
+
+
+.active{
+
+	left: 50px;
+}
+
+
+img:hover{
+	
+	box-shadow: black;
+}
+
+
+.about_container{
+	
+	text-align: center;
+	
+	padding: 22px;
+}
+
+
+.about_container p{
+
+	justify-content: center;
+	
+	padding: 54px;
+}
+
+
+.alert{
+
+	border: 5px solid rgb( 173, 216, 230 );
+
+	padding: 12px;
+
+	margin: 85px;
+
+	border-radius: 6px;
+
+	transition: 0.4s ease-out;
+
+	color: rgb( 85, 225, 230 );
+}
+
+
+.alert:hover{
+	
+	border: 5px dashed rgb( 173, 216, 230 );
+	
+	transition: 0.4s ease-in-out;
+	
+	border-spacing: 12px;
+}
+
+
+.form_container{
+	
+	text-align: center;
+	
+	margin: 134px;
+	
+	justify-content: center;
+	
+	font-family: 'Poppins';
+}
+
+
+input[ type="text" ]{
+	
+	justify-content: left;
+	
+	margin: 32px;
+	
+	width: 20%;
+	
+	padding: 10px;
+}
+
+
+input[ type="textarea" ]{
+	
+	padding: 24px;
+	
+	margin: 31px;
+	
+	width: 25%;
+}
+
+
+input[ type="submit" ]{
+	
+	font-family: 'Poppins';
+	
+	border: 2px solid var( --primary-color );
+	
+	padding: 16px;
+	
+	margin: 28px;
+	
+	fill: none;
+}
+
+
+input:focus{
+
+	border: 2px solid black;
+}
+
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.nav > .nav-btn, .nav > #nav-check{
+
+	display: none;
+}
+
+
+/* Media Queries */
+
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+ 
+}
+/*# sourceMappingURL=contact.cb41b962.css.map */
